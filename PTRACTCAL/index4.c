@@ -1,19 +1,13 @@
 // Read a string and reverse it in place
-
 #include <stdio.h>
-#include <string.h>     
 
-int main(){
+int main() {
     char str[] = "Apple";
-    int n = strlen(str);
-    
-    for(int i=0;i<n/2;i++){
-        char temp = str[i];
-        str[i] = str[n-i-1];
-        str[n-i-1] = temp;
+
+    printf("Reversed string: ");
+    for (int i = 4; i >= 0; i--) {   
+        printf("%c", str[i]);
     }
 
-    printf("Reversed string: %s",str);
-
-    return 0 ;
+    return 0;
 }
